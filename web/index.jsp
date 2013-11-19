@@ -13,6 +13,9 @@
     </head>
     <body>
         <a href="sgldij"> <input type="button"> </a>
-        <h1>Hello World!</h1>
+        
+        <%   //Borrar cuando se haga el login!!!  %>
+        <h1><% response.sendRedirect("testMantenimiento"); %></h1>
+        
     </body>
 </html>
