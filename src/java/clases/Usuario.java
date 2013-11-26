@@ -1,28 +1,17 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package clases;
 
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- *
- * @author laboratorio
- */
-
-
 //falta hacer el metodo de BUSCAR HOTEL
 //ver diagrama de clases cualquier cosa
 public class Usuario {
+
     private String usuario;
     private String contrasena;
     private int id;
     private List<Hotel> lstHoteles;
 
-    
-    
     public Usuario(String usuario, String contrasena, int id) {
         this.usuario = usuario;
         this.contrasena = contrasena;
@@ -53,20 +42,22 @@ public class Usuario {
     public void setId(int id) {
         this.id = id;
     }
-    
-    public void addLstHoteles(Hotel hotel){
-    lstHoteles.add(hotel);
+
+    public void addLstHoteles(Hotel hotel) {
+        lstHoteles.add(hotel);
     }
-    
-    public void removerLstHoteles(Hotel hotel){
-    lstHoteles.remove(hotel);
+
+    public void removerLstHoteles(Hotel hotel) {
+        lstHoteles.remove(hotel);
     }
 
     public List<Hotel> getLstHoteles() {
         return lstHoteles;
     }
 
-  
-    
-    
+    @Override
+    public String toString() {
+        return "<p><input name=\"usuario1\" type=\"radio\" value=" + getUsuario() + "" + "/>"
+                + getUsuario() + "</p>";
+    }
 }

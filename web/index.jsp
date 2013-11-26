@@ -12,9 +12,12 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <a href="sgldij"> <input type="button"> </a>
-            <%   //Borrar cuando se haga el login!!!  %>
-        <h1><% response.sendRedirect("testMantenimiento"); %></h1>
-
+        <form action="LoginUsuario" method="post">
+            <fieldset><legend>Hotel California Express</legend><br />
+                Usuario:      <input type="text" name="username"><br /><br />
+                Contraseña:   <input type="password" name="password"><br /><br />
+                <input type="submit" name="Ingresar" value="Ingresar" class="botones">
+            </fieldset>
+        </form>
     </body>
 </html>
