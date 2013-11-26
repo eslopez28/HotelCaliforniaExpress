@@ -1,6 +1,9 @@
 package servlets;
 
 import clases.Administracion;
+import clases.HDelux;
+import clases.HDoble;
+import clases.HStandard;
 import clases.Hotel;
 import clases.Usuario;
 import java.io.IOException;
@@ -29,7 +32,7 @@ public class LoginUsuario extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
-        
+
         HttpSession user = request.getSession();
         String username = request.getParameter("username");
         String pass = request.getParameter("password");
@@ -38,22 +41,30 @@ public class LoginUsuario extends HttpServlet {
         Hotel a = new Hotel(5, "asdasd", "hotel1", 23, 4123, "hotel de prueba", "de 123 a d3");
         Hotel sd = new Hotel(234, "sdwer", "hotel2", 2233, 414523, "hotel de prueba 2", "de 123 a d3");
 
+        HDelux hdlux1 = new HDelux("54", 45654, true);
+        HStandard hstandard1  = new HStandard("4", 123, true);
+        HDoble hdoble1 = new HDoble("3", 3, true);
+        
+        a.addLstHabitacion(hstandard1);
+        a.addLstHabitacion(hdoble1);
+        a.addLstHabitacion(hdlux1);
+        
         usuario.addLstHoteles(sd);
         usuario.addLstHoteles(a);
-        
+
         Administracion adminUsuario = new Administracion();
         adminUsuario.agregarUsuario(usuario);
-        
+
         try {
-            
-            if(("admin".equals(username) && "admin".equals(pass)) || (adminUsuario.getParameters("user").equals(username) && adminUsuario.getParameters("pass").equals(pass))){
+
+            if (("admin".equals(username) && "admin".equals(pass)) || (adminUsuario.getParameters("user").equals(username) && adminUsuario.getParameters("pass").equals(pass))) {
                 user.setAttribute("usuario", usuario);
                 response.sendRedirect("mantenimientoDeHoteles.jsp");
-            }else{
-                response.sendRedirect("index.jsp");
+            } else {
+                response.sendRedirect("error.jsp");
             }
 
-        } finally {            
+        } finally {
             out.close();
         }
     }
