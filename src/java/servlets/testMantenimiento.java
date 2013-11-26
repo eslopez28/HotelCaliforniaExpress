@@ -5,6 +5,7 @@
  */
 package servlets;
 
+import clases.HDelux;
 import clases.Hotel;
 import clases.Usuario;
 import java.io.IOException;
@@ -44,8 +45,14 @@ public class testMantenimiento extends HttpServlet {
             Hotel a = new Hotel(5, "asdasd", "hotel1", 23, 4123, "hotel de prueva", "de 123 a d3");
             Hotel sd = new Hotel(234, "sdwer", "hotel2", 2233, 414523, "hotel de prueva 2", "de 123 a d3");
        
+            HDelux hdlux1 = new HDelux("54", 45654, true);
+            
+            a.addLstHabitacion(hdlux1);
+            
             usuario1.addLstHoteles(sd);
             usuario1.addLstHoteles(a);
+            
+            
             
            
         request.getSession().setAttribute("usuario", usuario1);

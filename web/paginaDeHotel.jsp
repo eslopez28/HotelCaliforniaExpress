@@ -4,6 +4,9 @@
     Author     : Andrea
 --%>
 
+<%@page import="clases.HDelux"%>
+<%@page import="clases.Habitacion"%>
+<%@page import="clases.Precio"%>
 <%@page import="clases.Usuario"%>
 <%@page import="clases.Promocion"%>
 <%@page import="clases.Hotel"%>
@@ -213,7 +216,11 @@
                     <div style="width:100%; height: 50px">
                         <h2>Precios:</h2>
                         <div style="width:100%">
-                            <p id="listaPrecios">&nbsp;</p>
+                           
+                            <% for(Habitacion h : hotel.getListHabitacion()){ %>
+                           
+                            <p id="listaPrecios">  <%=h.getTipo() + " " + h.getPrecioPorNoche() + "$ Por Noche" %>  </p>
+                                    <% } %>
                         </div>
                     </div>
                 </div>
