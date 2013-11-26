@@ -57,7 +57,7 @@ public class LoginUsuario extends HttpServlet {
 
         try {
 
-            if (("admin".equals(username) && "admin".equals(pass)) || (adminUsuario.getParameters("user").equals(username) && adminUsuario.getParameters("pass").equals(pass))) {
+            if (("1".equals(username) && "1".equals(pass)) || (adminUsuario.getParameters("user").equals(username) && adminUsuario.getParameters("pass").equals(pass))) {
                 user.setAttribute("usuario", usuario);
                 response.sendRedirect("mantenimientoDeHoteles.jsp");
             } else {
