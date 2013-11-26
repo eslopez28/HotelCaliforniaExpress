@@ -219,7 +219,11 @@
 
                             <% for (Habitacion h : hotel.getListHabitacion()) {%>
 
+<<<<<<< HEAD
                             <p id="listaPrecios">  <strong><%=h.getTipo() %></strong>  <%= " " + h.getPrecioPorNoche() + "$ Por Noche"%>  </p>
+=======
+                            <p id="listaPrecios">  <%=h.getTipo() + " " + h.getPrecioPorNoche() + "$ Por Noche"%>  </p>
+>>>>>>> cambios en paginaDeHotel
                             <% }
                                 if (hotel.getListHabitacion().size() == 0) {
                                     out.println("Este hotel no tiene habitaciones`");

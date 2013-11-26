@@ -41,9 +41,15 @@ public class LoginUsuario extends HttpServlet {
         Hotel a = new Hotel(5, "asdasd", "hotel1", 23, 4123, "hotel de prueba", "de 123 a d3");
         Hotel sd = new Hotel(234, "sdwer", "hotel2", 2233, 414523, "hotel de prueba 2", "de 123 a d3");
 
+<<<<<<< HEAD
         HDelux hdlux1 = new HDelux(45, "6", 56, false);
         HStandard hstandard1  = new HStandard(65, "2", 789, false);
         HDoble hdoble1 = new HDoble(123, "3", 68, false);
+=======
+        HDelux hdlux1 = new HDelux("54", 45654, true);
+        HStandard hstandard1  = new HStandard("4", 123, true);
+        HDoble hdoble1 = new HDoble("3", 3, true);
+>>>>>>> cambios en paginaDeHotel
         
         a.addLstHabitacion(hstandard1);
         a.addLstHabitacion(hdoble1);
@@ -57,7 +63,11 @@ public class LoginUsuario extends HttpServlet {
 
         try {
 
+<<<<<<< HEAD
             if (("1".equals(username) && "1".equals(pass)) || (adminUsuario.getParameters("user").equals(username) && adminUsuario.getParameters("pass").equals(pass))) {
+=======
+            if (("admin".equals(username) && "admin".equals(pass)) || (adminUsuario.getParameters("user").equals(username) && adminUsuario.getParameters("pass").equals(pass))) {
+>>>>>>> cambios en paginaDeHotel
                 user.setAttribute("usuario", usuario);
                 response.sendRedirect("mantenimientoDeHoteles.jsp");
             } else {
