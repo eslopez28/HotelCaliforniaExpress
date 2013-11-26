@@ -13,9 +13,8 @@
     </head>
     <body>
         <a href="sgldij"> <input type="button"> </a>
-        
-        <%   //Borrar cuando se haga el login!!!  %>
+            <%   //Borrar cuando se haga el login!!!  %>
         <h1><% response.sendRedirect("testMantenimiento"); %></h1>
-        
+
     </body>
 </html>

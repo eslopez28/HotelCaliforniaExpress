@@ -213,6 +213,8 @@
                     <div style="width:100%; height: 50px">
                         <h2>Precios:</h2>
                         <div style="width:100%">
+                            <%// for(Precio p : hotel.){
+                           // }  %>
                             <p id="listaPrecios">&nbsp;</p>
                         </div>
                     </div>

@@ -12,6 +12,14 @@
         <servlet-name>AgregarHotel</servlet-name>
         <servlet-class>servlets.AgregarHotel</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ServletPromocion</servlet-name>
+        <servlet-class>servlets.ServletPromocion</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletHabitacion</servlet-name>
+        <servlet-class>servlets.ServletHabitacion</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>servletMantenimientoHoteles</servlet-name>
         <url-pattern>/servletMantenimientoHoteles</url-pattern>
@@ -23,6 +31,14 @@
     <servlet-mapping>
         <servlet-name>AgregarHotel</servlet-name>
         <url-pattern>/AgregarHotel</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletPromocion</servlet-name>
+        <url-pattern>/ServletPromocion</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletHabitacion</servlet-name>
+        <url-pattern>/ServletHabitacion</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

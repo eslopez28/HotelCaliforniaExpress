@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
+        <file>file:/C:/Users/PaBLO%20FerNandez/Documents/HotelCaliforniaExpress/src/java/clases/Promocion.java</file>
+        <file>file:/C:/Users/PaBLO%20FerNandez/Documents/HotelCaliforniaExpress/src/java/clases/Reserva.java</file>
+        <file>file:/C:/Users/PaBLO%20FerNandez/Documents/HotelCaliforniaExpress/src/java/clases/Precio.java</file>
+        <file>file:/C:/Users/PaBLO%20FerNandez/Documents/HotelCaliforniaExpress/src/java/clases/Login.java</file>
+        <file>file:/C:/Users/PaBLO%20FerNandez/Documents/HotelCaliforniaExpress/src/java/clases/Habitacion.java</file>
+        <file>file:/C:/Users/PaBLO%20FerNandez/Documents/HotelCaliforniaExpress/web/reservas(en%20proceso).jsp</file>
+    </open-files>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/Users/Andrea/Dropbox/Proyecto%20progra%20II/HotelCaliforniaExpress/src/java/servlets/servletMantenimientoHoteles.java</file>
-            <file>file:/C:/Users/Andrea/Dropbox/Proyecto%20progra%20II/HotelCaliforniaExpress/web/paginaDeHotel.jsp</file>
-            <file>file:/C:/Users/Andrea/Dropbox/Proyecto%20progra%20II/HotelCaliforniaExpress/web/mantenimientoDeHoteles.jsp</file>
-            <file>file:/C:/Users/Andrea/Dropbox/Proyecto%20progra%20II/HotelCaliforniaExpress/web/modificarDatosHotel.jsp</file>
-            <file>file:/C:/Users/Andrea/Dropbox/Proyecto%20progra%20II/HotelCaliforniaExpress/src/java/servlets/testMantenimiento.java</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
