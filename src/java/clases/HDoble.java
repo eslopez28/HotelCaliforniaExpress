@@ -8,26 +8,21 @@ package clases;
  *
  * @author laboratorio
  */
-public class HDoble implements Precio{
+public class HDoble extends Habitacion{
 
-    @Override
-    public String getPrecioTempAlta() {
-        throw new UnsupportedOperationException("Not supported yet.");
+    public HDoble(String campo, int numeroHabitacion, boolean ocupada) {
+        super(campo, numeroHabitacion, ocupada);
     }
 
     @Override
-    public void setPrecioTempAlta() {
-        throw new UnsupportedOperationException("Not supported yet.");
+    public int getPrecioPorNoche() {
+        return 47;
+    }
+ @Override
+    public String getTipo() {
+        return "Habitacion Doble";
     }
 
-    @Override
-    public String getPrecioTempBaja() {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
-
-    @Override
-    public void setPrecioTempBaja() {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
     
 }
+

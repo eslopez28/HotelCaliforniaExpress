@@ -63,6 +63,10 @@ public abstract class Habitacion {
         this.lstServicios.add(s);
     }
 
+    public abstract int getPrecioPorNoche();
+
+    public abstract String getTipo();
+
     @Override
     public String toString() {
         return "Habitacion{" + "campo=" + campo + "\n"
