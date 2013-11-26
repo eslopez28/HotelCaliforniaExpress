@@ -10,13 +10,15 @@ package clases;
  */
 public class HDoble extends Habitacion{
 
-    public HDoble(String campo, int numeroHabitacion, boolean ocupada) {
-        super(campo, numeroHabitacion, ocupada);
+    public HDoble(int precio, String campo, int numeroHabitacion, boolean ocupada) {
+        super(precio, campo, numeroHabitacion, ocupada);
     }
+
+
 
     @Override
     public int getPrecioPorNoche() {
-        return 47;
+        return precio;
     }
  @Override
     public String getTipo() {

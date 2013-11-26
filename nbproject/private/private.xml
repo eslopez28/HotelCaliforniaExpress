@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
-    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
-        <file>file:/C:/Users/laboratorio/Desktop/HotelCaliforniaExpress/web/index.jsp</file>
-        <file>file:/C:/Users/laboratorio/Desktop/HotelCaliforniaExpress/web/paginaDeHotel.jsp</file>
-        <file>file:/C:/Users/laboratorio/Desktop/HotelCaliforniaExpress/src/java/clases/Hotel.java</file>
-        <file>file:/C:/Users/laboratorio/Desktop/HotelCaliforniaExpress/web/mantenimientoDeHoteles.jsp</file>
-        <file>file:/C:/Users/laboratorio/Desktop/HotelCaliforniaExpress/src/java/clases/Habitacion.java</file>
-        <file>file:/C:/Users/laboratorio/Desktop/HotelCaliforniaExpress/src/java/clases/HDelux.java</file>
-        <file>file:/C:/Users/laboratorio/Desktop/HotelCaliforniaExpress/src/java/clases/HStandard.java</file>
-        <file>file:/C:/Users/laboratorio/Desktop/HotelCaliforniaExpress/src/java/clases/HDoble.java</file>
-        <file>file:/C:/Users/laboratorio/Desktop/HotelCaliforniaExpress/src/java/servlets/testMantenimiento.java</file>
-        <file>file:/C:/Users/laboratorio/Desktop/HotelCaliforniaExpress/src/java/servlets/LoginUsuario.java</file>
-    </open-files>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/Andrea/Dropbox/Proyecto%20progra%20II/HotelCaliforniaExpress/src/java/servlets/servletMantenimientoHoteles.java</file>

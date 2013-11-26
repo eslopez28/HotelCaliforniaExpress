@@ -196,7 +196,7 @@
                     </p>
                     <p> 
 
-                        <input style="margin-left:100px" type="submit" name="btnBusquedaAvanzada" id="btnBusquedaAvanzada" value="Busqueda Avanzada" />
+                        <%-- <input style="margin-left:100px" type="submit" name="btnBusquedaAvanzada" id="btnBusquedaAvanzada" value="Busqueda Avanzada" /> --%>
                         </p>
                     <p> 
                         <a href="AgregarHotel.jsp">  <input style="margin-left:100px" type="button" name="btnAgregarHotel" id="btnAgregarHotel" value="Agregar Hotel" /> </a>

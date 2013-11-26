@@ -10,13 +10,15 @@ package clases;
  */
 public class HDelux extends Habitacion{
 
-    public HDelux(String campo, int numeroHabitacion, boolean ocupada) {
-        super(campo, numeroHabitacion, ocupada);
+    public HDelux(int precio, String campo, int numeroHabitacion, boolean ocupada) {
+        super(precio, campo, numeroHabitacion, ocupada);
     }
+
+    
 
     @Override
     public int getPrecioPorNoche() {
-        return 98;
+        return precio;
     }
 
     @Override
