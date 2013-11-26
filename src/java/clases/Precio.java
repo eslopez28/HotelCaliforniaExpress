@@ -9,11 +9,12 @@ package clases;
  * @author laboratorio
  */
 public interface Precio {
-    
+
     public abstract String getPrecioTempAlta();
+
     public abstract void setPrecioTempAlta();
-    
-     public abstract String getPrecioTempBaja();
+
+    public abstract String getPrecioTempBaja();
+
     public abstract void setPrecioTempBaja();
-    
 }

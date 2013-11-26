@@ -13,6 +13,7 @@ import java.util.List;
  */
 public abstract class Habitacion {
 
+<<<<<<< HEAD
     protected int precio;
     protected String campo;
     protected int numeroHabitacion;
@@ -21,9 +22,22 @@ public abstract class Habitacion {
 
     public Habitacion(int precio, String campo, int numeroHabitacion, boolean ocupada) {
         this.precio = precio;
+=======
+    private String campo;
+    private int numeroHabitacion;
+    private boolean ocupada;
+    private Precio precio;
+    List<Servicio> lstServicios = new ArrayList<Servicio>();
+
+    public Habitacion() {
+    }
+
+    public Habitacion(String campo, int numeroHabitacion, boolean ocupada, Precio precio) {
+>>>>>>> Reserva y Clientes
         this.campo = campo;
         this.numeroHabitacion = numeroHabitacion;
         this.ocupada = ocupada;
+        this.precio= precio;
     }
 
    
@@ -50,6 +64,14 @@ public abstract class Habitacion {
 
     public void setOcupada(boolean ocupada) {
         this.ocupada = ocupada;
+    }
+    
+    public Precio getPrecio(){
+        return precio;
+    }
+    
+    public void setPrecio(Precio precio){
+        this.precio= precio;
     }
 
     public List<Servicio> getLstServicios() {
