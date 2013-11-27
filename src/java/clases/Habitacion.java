@@ -13,19 +13,20 @@ import java.util.List;
  */
 public abstract class Habitacion {
 
-    private String campo;
-    private int numeroHabitacion;
-    private boolean ocupada;
-    List<Servicio> lstServicios = new ArrayList<Servicio>();
+    protected int precio;
+    protected String campo;
+    protected int numeroHabitacion;
+    protected boolean ocupada;
+     protected List<Servicio> lstServicios = new ArrayList<Servicio>();
 
-    public Habitacion() {
-    }
-
-    public Habitacion(String campo, int numeroHabitacion, boolean ocupada) {
+    public Habitacion(int precio, String campo, int numeroHabitacion, boolean ocupada) {
+        this.precio = precio;
         this.campo = campo;
         this.numeroHabitacion = numeroHabitacion;
         this.ocupada = ocupada;
     }
+
+   
 
     public String getCampo() {
         return campo;
@@ -51,7 +52,12 @@ public abstract class Habitacion {
         this.ocupada = ocupada;
     }
 
-    public String getLstServicios() {
+    public List<Servicio> getLstServicios() {
+        return lstServicios;
+    }
+    
+    
+    public String getLstServiciosString() {
         String lista = "";
         for (Servicio s : lstServicios) {
             lista += s;
@@ -59,10 +65,20 @@ public abstract class Habitacion {
         return lista;
     }
 
-    public void setLstServicios(Servicio s) {
+    public void addLstServicios(Servicio s) {
         this.lstServicios.add(s);
     }
 
+    public int getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(int precio) {
+        this.precio = precio;
+    }
+
+    
+    
     public abstract int getPrecioPorNoche();
 
     public abstract String getTipo();

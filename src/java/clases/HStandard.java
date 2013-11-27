@@ -10,17 +10,18 @@ package clases;
  */
 public class HStandard extends Habitacion{
 
-   
-
-    public HStandard(String campo, int numeroHabitacion, boolean ocupada) {
-        super(campo, numeroHabitacion, ocupada);
+    public HStandard(int precio, String campo, int numeroHabitacion, boolean ocupada) {
+        super(precio, campo, numeroHabitacion, ocupada);
     }
 
+   
+
+    
     
         
     @Override
     public int getPrecioPorNoche() {
-        return 24;
+        return precio;
     }
 
      @Override

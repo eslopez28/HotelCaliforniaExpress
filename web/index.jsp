@@ -25,6 +25,9 @@
         </style>
     </head>
     <body>
+        
+        <p><strong>El usuario es 1 y la contraseña es 1</strong></p>
+        
         <form action="LoginUsuario" method="post">
             <fieldset><legend>Hotel California Express</legend><br />
                 Usuario:      <input type="text" name="username"><br /><br />
