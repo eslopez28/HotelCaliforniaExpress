@@ -10,11 +10,11 @@ package clases;
  */
 public interface IPrecio {
 
-    public abstract String getPrecioTempAlta();
+    public abstract double getPrecioTempAlta();
 
-    public abstract void setPrecioTempAlta();
+    public abstract void setPorcentajeTempAlta(double porcentaje);
 
-    public abstract String getPrecioTempBaja();
+    public abstract double getPrecioTempBaja();
 
-    public abstract void setPrecioTempBaja();
+    public abstract void setPorcentajeTempBaja(double porcentaje);
 }

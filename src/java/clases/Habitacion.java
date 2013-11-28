@@ -11,17 +11,13 @@ import java.util.List;
  *
  * @author laboratorio
  */
-public abstract class Habitacion implements IPrecio{
+public abstract class Habitacion implements IPrecio {
 
-
-    private int campo;
-    private int numeroHabitacion;
-    private boolean ocupada = false;
-    private int precioBase;
-    List<Servicio> lstServicios = new ArrayList<Servicio>();
-
-    public Habitacion() {
-    }
+    protected int campo;
+    protected int numeroHabitacion;
+    protected boolean ocupada = false;
+    protected int precioBase;
+    protected List<Servicio> lstServicios = new ArrayList<Servicio>();
 
     public Habitacion(int campo, int numeroHabitacion, int precioBase) {
         this.campo = campo;
@@ -69,8 +65,17 @@ public abstract class Habitacion implements IPrecio{
         this.lstServicios = lstServicios;
     }
 
+    @Override
+    public abstract double getPrecioTempAlta();
 
+    @Override
+    public abstract void setPorcentajeTempAlta(double porcentaje);
 
+    @Override
+    public abstract double getPrecioTempBaja();
+
+    @Override
+    public abstract void setPorcentajeTempBaja(double porcentaje);
 
     public String getLstServiciosString() {
         String lista = "";
@@ -83,8 +88,6 @@ public abstract class Habitacion implements IPrecio{
     public void addLstServicios(Servicio s) {
         this.lstServicios.add(s);
     }
-
-    public abstract int getPrecioPorNoche();
 
     public abstract String getTipo();
 

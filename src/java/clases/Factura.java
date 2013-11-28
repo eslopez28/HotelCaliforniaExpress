@@ -10,19 +10,19 @@ public class Factura {
     private Reserva r;
     private Habitacion ha;
     private Extra e;
-    private Precio p;
+    private boolean temporadaAlta; //para saber que tipo de precio sacar de la habitacion
     private Promocion promo;
 
     public Factura() {
     }
 
-    public Factura(int id, Cliente c, Hotel h, Reserva r, Habitacion ha, Extra e, Precio p, Promocion promo) {
+    public Factura(int id, Cliente c, Hotel h, Reserva r, Habitacion ha, Extra e, Promocion promo, boolean temporadaAlta) {
         this.c = c;
         this.h = h;
         this.r = r;
         this.ha = ha;
         this.e = e;
-        this.p = p;
+        this.temporadaAlta = temporadaAlta;
         this.promo = promo;
     }
 
@@ -74,12 +74,12 @@ public class Factura {
         this.e = e;
     }
 
-    public Precio getP() {
-        return p;
-    }
-
-    public void setP(Precio p) {
-        this.p = p;
+    public double getPrecio(boolean temporadaAlta) { //pregunta si es temporada alta o no
+        if (temporadaAlta) {                         //!!! falta poner que se multiplique el precio base
+            return ha.getPrecioTempAlta();           //!!! por la cantidad de dias que duro la reserva
+        } else {
+            return ha.getPrecioTempBaja();
+        }
     }
 
     public Promocion getPromo() {
@@ -94,15 +94,15 @@ public class Factura {
     public String toString() {
         String separar = System.lineSeparator();
         return "Cliente: " + this.c.getNombre() + "\t" + "Numero de Orden: " + this.id + "\n" + separar
-                + "Telefono: " + this.c.getTelefono() + "\t" + "Fecha: " + Calendar.getInstance().getTime() + "\n"+ separar
+                + "Telefono: " + this.c.getTelefono() + "\t" + "Fecha: " + Calendar.getInstance().getTime() + "\n" + separar
                 //"Responsable: " + this.c.getResponsable() + "\t" + "Tipo de cliente: " + prueba() + "\n" + separar
                 + "__________________________________________________________________________________" + "\n" + separar
                 + "Hotel\tHabitacion\tPrecio\tDescuento\tImpuesto\tSubToral\n" + separar
-                + h.getNombre() + "\t" + ha.getCampo() + "\t" + p.getPrecioTempAlta() + "\t" /*aqui falta otros campos mas*/
-                + "__________________________________________________________________________________" + "\n"+separar
-                + "Total:\n"+separar
-                + /*aqui falta el total*/separar;
-        
+                + h.getNombre() + "\t" + ha.getCampo() + "\t" + this.getPrecio(temporadaAlta) + "\t" /*aqui falta otros campos mas*/
+                + "__________________________________________________________________________________" + "\n" + separar
+                + "Total:\n" + separar
+                + /*aqui falta el total*/ separar;
+
     }
 
 }
