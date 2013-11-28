@@ -13,27 +13,7 @@ import java.util.List;
  */
 public abstract class Habitacion implements IPrecio {
 
-<<<<<<< HEAD
 
-    private String campo;
-    private int numeroHabitacion;
-    private boolean ocupada;
-    private Precio precio;
-    List<Servicio> lstServicios = new ArrayList<Servicio>();
-
-    public Habitacion() {
-    }
-
-
-
-    public Habitacion(String campo, int numeroHabitacion, boolean ocupada, int precio) {
-
-        this.campo = campo;
-        this.numeroHabitacion = numeroHabitacion;
-        this.ocupada = ocupada;
-        this.precio = precio;
-
-=======
     protected int campo;
     protected int numeroHabitacion;
     protected boolean ocupada = false;
@@ -44,7 +24,7 @@ public abstract class Habitacion implements IPrecio {
         this.campo = campo;
         this.numeroHabitacion = numeroHabitacion;
         this.precioBase = precioBase;
->>>>>>> origin/Andrea
+
     }
 
     public int getCampo() {
@@ -71,37 +51,21 @@ public abstract class Habitacion implements IPrecio {
         this.ocupada = ocupada;
     }
     
-    public Precio getPrecio(){
-        return precio;
-    }
-    
-    public void setPrecio(Precio precio){
-        this.precio= precio;
-    }
 
-<<<<<<< HEAD
-    public int getPrecio() {
-        return precio;
-    }
-
-    public void setPrecio(int precio) {
-        this.precio = precio;
-=======
     public int getPrecioBase() {
         return precioBase;
     }
 
     public void setPrecioBase(int precioBase) {
         this.precioBase = precioBase;
->>>>>>> origin/Andrea
+
     }
 
     public List<Servicio> getLstServicios() {
         return lstServicios;
     }
 
-<<<<<<< HEAD
-=======
+
     public void setLstServicios(List<Servicio> lstServicios) {
         this.lstServicios = lstServicios;
     }
@@ -118,7 +82,7 @@ public abstract class Habitacion implements IPrecio {
     @Override
     public abstract void setPorcentajeTempBaja(double porcentaje);
 
->>>>>>> origin/Andrea
+
     public String getLstServiciosString() {
         String lista = "";
         for (Servicio s : lstServicios) {
@@ -131,11 +95,7 @@ public abstract class Habitacion implements IPrecio {
         this.lstServicios.add(s);
     }
 
-<<<<<<< HEAD
-    public abstract int getPrecioPorNoche();
 
-=======
->>>>>>> origin/Andrea
     public abstract String getTipo();
 
     @Override

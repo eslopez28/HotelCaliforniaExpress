@@ -8,23 +8,7 @@ package clases;
  *
  * @author laboratorio
  */
-<<<<<<< HEAD
-public class HDoble extends Habitacion{
 
-    public HDoble(int precio, String campo, int numeroHabitacion, boolean ocupada) {
-        super(precio, campo, numeroHabitacion, ocupada);
-    }
-
-
-
-    @Override
-    public int getPrecioPorNoche() {
-        return precio;
-    }
- @Override
-    public String getTipo() {
-        return "Habitacion Doble";
-=======
 public class HDoble extends Habitacion {
 
     private double porcentajeTempAlta = 1.5; // 1.X aumenta el numero
@@ -53,7 +37,7 @@ public class HDoble extends Habitacion {
     @Override
     public void setPorcentajeTempBaja(double porcentaje) {
         this.porcentajeTempBaja = porcentaje;
->>>>>>> origin/Andrea
+
     }
 
     

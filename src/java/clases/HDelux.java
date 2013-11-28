@@ -8,28 +8,7 @@ package clases;
  *
  * @author laboratorio
  */
-<<<<<<< HEAD
-public class HDelux extends Habitacion{
 
-    public HDelux(int precio, String campo, int numeroHabitacion, boolean ocupada) {
-        super(precio, campo, numeroHabitacion, ocupada);
-    }
-
-    
-
-    @Override
-    public int getPrecioPorNoche() {
-        return precio;
-    }
-
-    @Override
-    public String getTipo() {
-        return "Habitacion Delux";
-    }
-
-    
-    
-=======
 public class HDelux extends Habitacion {
 
     private double porcentajeTempAlta = 1.5; // 1.X aumenta el numero
@@ -64,5 +43,5 @@ public class HDelux extends Habitacion {
         return "Habitacion Delux";
     }
 
->>>>>>> origin/Andrea
+
 }

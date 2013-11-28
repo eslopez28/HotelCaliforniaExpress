@@ -1,26 +1,18 @@
 package servlets;
 
 import clases.Cliente;
-<<<<<<< HEAD
 
-import java.io.IOException;
-import java.io.PrintWriter;
-
-=======
->>>>>>> origin/Andrea
 import clases.Reserva;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Random;
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/Andrea
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import static javax.swing.text.html.HTML.Tag.HEAD;
 
 @WebServlet(name = "ReservaClientes", urlPatterns = {"/ReservaClientes"})
 public class ReservaClientes extends HttpServlet {
@@ -31,49 +23,43 @@ public class ReservaClientes extends HttpServlet {
         PrintWriter out = response.getWriter();
         try {
             response.sendRedirect("reservaH.jsp");
-           String nombre = request.getParameter("nombre");
-           String id = request.getParameter("id");
-           String nacionalidad = request.getParameter("nacionalidad");
-           String correo = request.getParameter("correo");
+            String nombre = request.getParameter("nombre");
+            String id = request.getParameter("id");
+            String nacionalidad = request.getParameter("nacionalidad");
+            String correo = request.getParameter("correo");
             Cliente c = new Cliente(nombre, Integer.parseInt(id), correo, nacionalidad, 83236004, "xxxx", "sdf");
             request.getSession().setAttribute("cliente", c);
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/Andrea
+        
             String dia = request.getParameter("dia");
-            String mes= request.getParameter("mes");
+            String mes = request.getParameter("mes");
             String anno = request.getParameter("anno");
             String dia2 = request.getParameter("dia2");
-            String mes2= request.getParameter("mes2");
+            String mes2 = request.getParameter("mes2");
             String anno2 = request.getParameter("anno2");
-            
-            String horaS= request.getParameter("horaS");
-            String minutosS= request.getParameter("minutosS");
-            String selampppm2= request.getParameter("selampppm2");
-            String horaL= request.getParameter("horaL");
-            String minutosL= request.getParameter("minutosL");
-            String selampppm= request.getParameter("selampppm");
-            
-            String adultoscant= request.getParameter("adultoscant");
-            String ninnoscant= request.getParameter("ninnoscant");
-            
-            String fechaLlegada =dia + "/"+mes+"/"+anno;
-            String fechaSalida= dia2+ "/" + mes2+ "/" + anno2;
-            String horaLlegada = horaL+ ":" + minutosL +" "+ selampppm;
-            String horaSalida = horaS+ ":" + minutosS+ " "+ selampppm2;
-            
-            int adultos= Integer.parseInt(adultoscant);
-            int ninnos= Integer.parseInt(ninnoscant);
-            Random ran =new Random(1000);
+
+            String horaS = request.getParameter("horaS");
+            String minutosS = request.getParameter("minutosS");
+            String selampppm2 = request.getParameter("selampppm2");
+            String horaL = request.getParameter("horaL");
+            String minutosL = request.getParameter("minutosL");
+            String selampppm = request.getParameter("selampppm");
+
+            String adultoscant = request.getParameter("adultoscant");
+            String ninnoscant = request.getParameter("ninnoscant");
+
+            String fechaLlegada = dia + "/" + mes + "/" + anno;
+            String fechaSalida = dia2 + "/" + mes2 + "/" + anno2;
+            String horaLlegada = horaL + ":" + minutosL + " " + selampppm;
+            String horaSalida = horaS + ":" + minutosS + " " + selampppm2;
+
+            int adultos = Integer.parseInt(adultoscant);
+            int ninnos = Integer.parseInt(ninnoscant);
+            Random ran = new Random(1000);
             int codigo = ran.nextInt();
             Reserva r = new Reserva(fechaLlegada, fechaSalida, horaLlegada, horaSalida, c, codigo, ninnos, adultos);
-            
-            request.getSession().setAttribute("reserva", r);
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/Andrea
+            request.getSession().setAttribute("reserva", r);
+            
         } finally {
             out.close();
         }
