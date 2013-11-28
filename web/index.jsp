@@ -25,7 +25,10 @@
         </style>
     </head>
     <body>
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/Andrea
         
         <p><strong>El usuario es 1 y la contraseña es 1</strong></p>
         
@@ -36,6 +39,9 @@
                 <input style="margin-left: 180px" style="font-size: 16px" type="submit" name="Ingresar" value="Ingresar">
             </fieldset>
         </form>
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/Andrea
     </body>
 </html>

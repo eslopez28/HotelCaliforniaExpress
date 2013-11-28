@@ -1,15 +1,21 @@
 package servlets;
 
 import clases.Cliente;
+<<<<<<< HEAD
 
 import java.io.IOException;
 import java.io.PrintWriter;
 
+=======
+>>>>>>> origin/Andrea
 import clases.Reserva;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Random;
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/Andrea
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -31,7 +37,10 @@ public class ReservaClientes extends HttpServlet {
            String correo = request.getParameter("correo");
             Cliente c = new Cliente(nombre, Integer.parseInt(id), correo, nacionalidad, 83236004, "xxxx", "sdf");
             request.getSession().setAttribute("cliente", c);
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/Andrea
             String dia = request.getParameter("dia");
             String mes= request.getParameter("mes");
             String anno = request.getParameter("anno");
@@ -61,7 +70,10 @@ public class ReservaClientes extends HttpServlet {
             Reserva r = new Reserva(fechaLlegada, fechaSalida, horaLlegada, horaSalida, c, codigo, ninnos, adultos);
             
             request.getSession().setAttribute("reserva", r);
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/Andrea
         } finally {
             out.close();
         }

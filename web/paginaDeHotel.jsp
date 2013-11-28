@@ -216,7 +216,10 @@
                     <div style="width:100%; height: 50px">
                         <h2>Precios:</h2>
                         <div style="width:100%">
+<<<<<<< HEAD
 <
+=======
+>>>>>>> origin/Andrea
 
                             <% for (Habitacion h : hotel.getListHabitacion()) {%>
 
@@ -229,7 +232,10 @@
                                     out.println("Este hotel no tiene habitaciones`");
                                 }
                             %>  
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/Andrea
                         </div>
                     </div>
                 </div>

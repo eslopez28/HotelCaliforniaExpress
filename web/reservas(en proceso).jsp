@@ -137,10 +137,15 @@
         </style>
         <script>
             maximo = new Array();
+<<<<<<< HEAD
 
             maximo["horaL"] = 23;
             maximo["minutosL"] = 55;
 
+=======
+            maximo["horaL"] = 23;
+            maximo["minutosL"] = 55;
+>>>>>>> origin/Andrea
             function cambiar(hom, a) {
                 h = document.forms[0][hom]
                 h1 = parseInt(h.value);
@@ -172,7 +177,10 @@
         </style>
     </head>
     <form action="ReservaClientes" method="post">
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/Andrea
         <body>
             <div class="container">
                 <div class="sidebar1">
@@ -247,6 +255,10 @@
                 </div>
             </div>
         </body>
+<<<<<<< HEAD
 
     </form>
+=======
+    </form>>
+>>>>>>> origin/Andrea
 </html>

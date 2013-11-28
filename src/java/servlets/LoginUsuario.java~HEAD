@@ -42,11 +42,13 @@ public class LoginUsuario extends HttpServlet {
         Hotel sd = new Hotel(234, "sdwer", "hotel2", 2233, 414523, "hotel de prueba 2", "de 123 a d3");
 
 
-        HDelux hdlux1 = new HDelux(5, 79846, 56);
-        HStandard hstandard1  = new HStandard(1, 23, 34);
-        HDoble hdoble1 = new HDoble(2, 542, 12);
+        HDelux hdlux1 = new HDelux(45, "6", 56, false);
+        HStandard hstandard1  = new HStandard(65, "2", 789, false);
+        HDoble hdoble1 = new HDoble(123, "3", 68, false);
 
-       
+        HDelux hdlux1 = new HDelux(45, "6", 56, false);
+        HStandard hstandard1  = new HStandard(65, "2", 789, false);
+        HDoble hdoble1 = new HDoble(123, "3", 68, false);
 
         
         a.addLstHabitacion(hstandard1);
