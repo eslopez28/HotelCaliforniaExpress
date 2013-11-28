@@ -8,7 +8,7 @@ package clases;
  *
  * @author laboratorio
  */
-public interface Precio {
+public interface IPrecio {
 
     public abstract String getPrecioTempAlta();
 

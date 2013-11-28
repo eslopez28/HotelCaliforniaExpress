@@ -11,34 +11,29 @@ import java.util.List;
  *
  * @author laboratorio
  */
-public abstract class Habitacion {
+public abstract class Habitacion implements IPrecio{
 
 
-    private String campo;
+    private int campo;
     private int numeroHabitacion;
-    private boolean ocupada;
-    private Precio precio;
+    private boolean ocupada = false;
+    private int precioBase;
     List<Servicio> lstServicios = new ArrayList<Servicio>();
 
     public Habitacion() {
     }
 
-
-
-    public Habitacion(String campo, int numeroHabitacion, boolean ocupada, int precio) {
-
+    public Habitacion(int campo, int numeroHabitacion, int precioBase) {
         this.campo = campo;
         this.numeroHabitacion = numeroHabitacion;
-        this.ocupada = ocupada;
-        this.precio = precio;
-
+        this.precioBase = precioBase;
     }
 
-    public String getCampo() {
+    public int getCampo() {
         return campo;
     }
 
-    public void setCampo(String campo) {
+    public void setCampo(int campo) {
         this.campo = campo;
     }
 
@@ -57,26 +52,25 @@ public abstract class Habitacion {
     public void setOcupada(boolean ocupada) {
         this.ocupada = ocupada;
     }
-    
-    public Precio getPrecio(){
-        return precio;
-    }
-    
-    public void setPrecio(Precio precio){
-        this.precio= precio;
+
+    public int getPrecioBase() {
+        return precioBase;
     }
 
-    public int getPrecio() {
-        return precio;
-    }
-
-    public void setPrecio(int precio) {
-        this.precio = precio;
+    public void setPrecioBase(int precioBase) {
+        this.precioBase = precioBase;
     }
 
     public List<Servicio> getLstServicios() {
         return lstServicios;
     }
+
+    public void setLstServicios(List<Servicio> lstServicios) {
+        this.lstServicios = lstServicios;
+    }
+
+
+
 
     public String getLstServiciosString() {
         String lista = "";
