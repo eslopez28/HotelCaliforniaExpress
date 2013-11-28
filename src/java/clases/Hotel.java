@@ -125,13 +125,13 @@ private List<FormaDePago> lstFormasDePago; //tarjeta, efectivo, paypal, etc
     }
     
     //obtiene la lista como objeto
-    public List getListHabitacion(){
+    public List<Habitacion> getListHabitacion(){
     return lstHabitacion;
     }
-     public List getListClientes(){
+     public List<Cliente> getListClientes(){
     return lstClientes;
     }
-      public List getListFormasDePago(){
+      public List<FormaDePago> getListFormasDePago(){
     return lstFormasDePago;
     }
 }

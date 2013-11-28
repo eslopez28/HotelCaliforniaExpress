@@ -4,6 +4,9 @@
     Author     : Andrea
 --%>
 
+<%@page import="clases.HDelux"%>
+<%@page import="clases.Habitacion"%>
+<%@page import="clases.Precio"%>
 <%@page import="clases.Usuario"%>
 <%@page import="clases.Promocion"%>
 <%@page import="clases.Hotel"%>
@@ -213,9 +216,20 @@
                     <div style="width:100%; height: 50px">
                         <h2>Precios:</h2>
                         <div style="width:100%">
-                            <%// for(Precio p : hotel.){
-                           // }  %>
-                            <p id="listaPrecios">&nbsp;</p>
+<
+
+                            <% for (Habitacion h : hotel.getListHabitacion()) {%>
+
+
+                            <p id="listaPrecios">  <strong><%=h.getTipo() %></strong>  <%= " " + h.getPrecioPorNoche() + "$ Por Noche"%>  </p>
+
+
+                            <% }
+                                if (hotel.getListHabitacion().size() == 0) {
+                                    out.println("Este hotel no tiene habitaciones`");
+                                }
+                            %>  
+
                         </div>
                     </div>
                 </div>
